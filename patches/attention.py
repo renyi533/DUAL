@@ -5,7 +5,7 @@ from tensorflow.python.ops import math_ops
 from tensorflow.python.ops import init_ops
 from tensorflow.python.ops import array_ops
 from tensorflow.python.ops import variable_scope as vs
-from activation import prelu
+from patches.activation import prelu
 
 
 class VecAttGRUCell(RNNCell):

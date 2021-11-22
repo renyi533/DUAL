@@ -167,7 +167,7 @@ class Model(object):
             else:
                 q_cov_variable = tf.get_variable(
                     "ind_cov_flat",
-                    shape=((num_inducing + 1) * num_inducing / 2,),
+                    shape=(int((num_inducing + 1) * num_inducing / 2),),
                     initializer=tf.initializers.constant(
                         amplitude * np.eye(num_inducing, dtype=np.float32)[np.tril_indices(num_inducing)]
                     ),
